@@ -9,77 +9,71 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.hp.stockmaintainence.MainActivity"
-    android:background="#64B5F6">
-
+    android:background="@drawable/background">
 
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="25dp"
         android:text="Maintain Your Stocks on the go!"
         android:textSize="20dp"
-        android:textStyle="bold"
-
-        android:layout_marginTop="42dp"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:textStyle="bold" />
 
     <Button
-        android:text="Update Item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/button3"
         style="@android:style/Widget.Button"
-        android:layout_above="@+id/button4"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        android:layout_marginBottom="22dp" />
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        android:layout_alignTop="@+id/button2"
+        android:layout_marginTop="64dp"
+        android:text="Update Item" />
 
     <Button
-        android:text="Delete Item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/button4"
         style="@android:style/Widget.Button"
-        android:layout_marginBottom="15dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Delete Item" />
 
     <Button
-        android:text="Retrieve Item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/button2"
         style="@android:style/Widget.Button"
-        android:layout_marginBottom="68dp"
-        android:layout_alignBottom="@+id/button3"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignStart="@+id/button1" />
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Retrieve Item" />
 
     <Button
-        android:text="Add Item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="62dp"
-        android:layout_marginStart="62dp"
         android:id="@+id/button1"
         style="@android:style/Widget.Button"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        />
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Add Item" />
 
     <Button
-        android:text="Create stock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/button5"
-        android:layout_above="@+id/button1"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignStart="@+id/button1"
-        android:layout_marginBottom="32dp"
-        style="@android:style/Widget.Button" />
+        style="@android:style/Widget.Button"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="53dp"
+        android:text="Create stock" />
 
 </RelativeLayout>
